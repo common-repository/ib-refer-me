@@ -1,0 +1,182 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+**/
+
+.modal-body a {
+  display: block;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+form.ib-ref-form {
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 40px 20px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  border-radius: 8px;
+}
+.ib-ref-form input, .ib-ref-form textarea {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid #ddd;
+  border-radius: 7px;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  box-shadow: 0 1px 0 rgb(0 0 0 / 3%) inset;
+  margin-bottom: 30px;
+}
+.ib-ref-form button.form-btn {
+  padding: 19px 39px 18px 39px;
+  color: #fff;
+  background-color: #005a87f5;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: none;
+  box-shadow: 0 -1px 0 rgb(255 255 255 / 10%) inset;
+  margin-bottom: 10px;
+}
+.ib-ref-form fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+.ib-ref-form legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+.ib-ref-form label {
+  display: block;
+  margin-bottom: 8px;
+}
+.ib-ref-form label .ib-req{
+    color: red;
+    padding-left: 5px;
+}
+@media screen and (min-width: 480px) {
+  form.ib-ref-form {
+    max-width: 480px;
+  }
+}
+/* Pop up CSS - Start */
+.modal-box {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  width: 98%;
+  background: white;
+  border-bottom: 1px solid #aaa;
+  border-radius: 4px;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-clip: padding-box;
+}
+
+.modal-box header,
+.modal-box .modal-header {
+  padding: 1.25em 1.5em;
+  border-bottom: 1px solid #ddd;
+}
+
+.modal-box header h3,
+.modal-box header h4,
+.modal-box .modal-header h3,
+.modal-box .modal-header h4 {
+  margin: 0;
+}
+
+.modal-box .modal-body {
+  padding: 2em 1.5em;
+  color: #000000;
+}
+.modal-box footer,
+.modal-box .modal-footer {
+  padding: 1em;
+  border-top: 1px solid #ddd;
+  background: rgba(0, 0, 0, 0.02);
+  text-align: right;
+}
+.modal-overlay {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 900;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3) !important;
+}
+a.close {
+  line-height: 1;
+  font-size: 1.5em;
+  position: absolute;
+  top: 6%;
+  right: 2%;
+  text-decoration: none;
+  color: #bbb;
+  cursor: pointer;
+}
+a.close:hover {
+  color: #222;
+  -webkit-transition: color 1s ease;
+  -moz-transition: color 1s ease;
+  transition: color 1s ease;
+}
+.btn {
+  color: #ffffff;
+  background-color: #d63638;
+  border: #faaca8 solid 1px;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.icon-div{
+    display: flex;
+    align-items: center;
+    max-width: 250px;
+    width: 100%;
+    justify-content: flex-start;
+}
+.refer-share-text{
+    font-size: 16px;
+}
+.icon-div-child {
+  max-width: 65%;
+  margin-left: 10px;
+}
+.icon-div-child > a {
+  text-decoration: none;
+}
+.modal-body a,
+.modal-body a:focus,
+.modal-body a:focus-within,
+.modal-body a:visited {
+  text-decoration: unset;
+}
+.modal-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.modal-body a {
+  color: #000000;
+}
+.ib-success-msg{
+    font-size: 18px;
+    font-weight: 700px;
+}
+@media (min-width: 32em) {
+  .modal-box {
+    max-width: 600px;
+  }
+}
+/* Pop up CSS - End */

@@ -1,0 +1,98 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+.ib_referral_header{
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    min-height: 80px;
+    padding: 20px;
+    margin-left: -20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 40px;
+    background: #ffffff;
+}
+.ib-ref-container{
+	max-width: 1600px;
+    width: 97%;
+    height: 100%;
+    margin: 40px auto;
+}
+ul.ib-ref-tabs{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+ul.ib-ref-tabs li{
+	background: none;
+	color: #222;
+	display: inline-block;
+	padding: 10px 15px;
+	cursor: pointer;
+	margin-bottom: 2px;
+	font-size: 16px;
+}
+ul.ib-ref-tabs li.current{
+	box-shadow: 0 -2px 4px 0px rgb(0 0 0 / 15%);
+    border-radius: 5px 5px 0 0;
+    color: #222;
+    background: #ffffff;
+}
+.ref-tab-content{
+	display: none;
+	box-shadow: rgb(0 0 0 / 24%) 1px 1px 4px;
+	border-radius: 5px;
+	padding: 25px;
+	height: 100%;
+    min-height: 800px;
+}
+.ref-tab-content.current{
+	display: inherit;
+	background: #ffffff;
+}
+.ib_about_content{
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.wp-core-ui select{
+    width:50px;
+}
+.ib_claimed{
+    color:red;
+}
+.ib_pending{
+    color:orange;
+}
+.dataTables_wrapper .dataTables_filter{
+    margin-bottom: 10px;
+}
+.ib_reference_table table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+.ib_reference_table th, td {
+    text-align: left;
+    padding: 8px;
+}
+.ib_reference_table thead tr{
+    background-color: #f2f2f2;
+}
+.ib_reference_table tr:nth-child(even){
+    background-color: #f2f2f2
+}
+.ref-instruction-ul{
+    list-style: disc;
+    padding-left: 30px;
+}
+.ib-inst-heading{
+    font-size: 20px;
+}
+@media only screen and (max-width: 784px) {
+    .ib_referral_header {
+        margin-left: -10px;
+    }
+}
